@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TrustWalletTestSuite" verbose="1" parallel="none">
+    
+    <parameter name="platform" value="android"/>
+    <parameter name="environment" value="qa"/>
+    
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    
+    <test name="SimpleWalletFlow" preserve-order="true">
+        <classes>
+            <class name="tests.SimpleWalletTest">
+                <methods>
+                    <include name="testSplashScreenAppears"/>
+                    <include name="testPasscodeCreationFlow"/>
+                    <include name="testNotificationPageFlow"/>
+                    <include name="testWalletReadyPage"/>
+                    <include name="testDashboardPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="EdgeCases" preserve-order="false">
+        <classes>
+            <class name="tests.EdgeCaseTest">
+                <methods>
+                    <include name="testAppLaunchWithoutInternet"/>
+                    <include name="testPasscodeCreationWithInvalidInput"/>
+                    <include name="testRapidPasscodeEntry"/>
+                    <include name="testPasscodeMismatch"/>
+                    <include name="testBackButtonDuringPasscodeCreation"/>
+                    <include name="testTimeoutHandling"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Diagnostics" preserve-order="false">
+        <classes>
+            <class name="tests.DiagnosticTest">
+                <methods>
+                    <include name="diagnoseWalletReadyPage"/>
+                    <include name="testDashboardElementIds"/>
+                    <include name="diagnosePageStructure"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite> 

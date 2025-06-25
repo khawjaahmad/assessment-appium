@@ -1,0 +1,151 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Java
+*.class
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# IDE - Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Appium specific
+appium.log
+appium-server.log
+*.log
+logs/
+screenshots/
+allure-results/
+allure-report/
+
+# Android specific
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# iOS specific
+*.ipa
+*.app
+*.xcworkspace
+*.xcodeproj
+DerivedData/
+build/
+
+# Test reports
+test-output/
+reports/
+extent-reports/
+testng-results.xml
+testng-failed.xml
+emailable-report.html
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Configuration files with sensitive data
+config.properties
+application.properties
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node modules (if using any Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if using any Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Coverage reports
+coverage/
+*.lcov
+.coverage
+.coverage.*
+
+# Performance logs
+*.perf
+*.trace
+
+# Device specific
+device-config-local.yaml
+local-config.yaml 

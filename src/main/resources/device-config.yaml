@@ -1,0 +1,67 @@
+android:
+  capabilities:
+    platformName: Android
+    platformVersion: "13"
+    deviceName: "emulator-5554"
+    udid: "emulator-5554"
+    automationName: UiAutomator2
+    noReset: false
+    fullReset: false
+    autoGrantPermissions: true
+    disableIdLocatorAutocompletion: true
+    autoAcceptAlerts: true
+    newCommandTimeout: 300
+    uiautomator2ServerInstallTimeout: 120000
+    adbExecTimeout: 60000
+    androidInstallTimeout: 300000
+    skipServerInstallation: false
+    skipDeviceInitialization: false
+    enforceAppInstall: true
+    systemPort: 8200
+    mjpegServerPort: 7813
+    disableSuppressAccessibilityService: true
+    ignoreUnimportantViews: true
+    appWaitActivity: "com.wallet.crypto.trustapp.ui.app.AppActivity"
+    appWaitDuration: 30000
+    
+  server:
+    url: "http://127.0.0.1:4725/wd/hub"
+    
+  timeouts:
+    implicit: 15
+    explicit: 30
+    pageLoad: 30
+    
+  app:
+    package: "com.wallet.crypto.trustapp"
+    activity: ".ui.app.AppActivity"
+    path: "src/apps/android/androidAPP.apk"
+    installTimeout: 300000
+    
+  screenshot:
+    onFailure: true
+    path: "target/screenshots/"
+    
+  allure:
+    results: "target/allure-results"
+    report: "target/allure-report"
+    
+ios:
+  capabilities:
+    platformName: iOS
+    platformVersion: "16.0"
+    deviceName: "iPhone 14"
+    automationName: XCUITest
+    bundleId: com.sixdays.trustwallet
+    noReset: false
+    fullReset: false
+    autoAcceptAlerts: true
+    newCommandTimeout: 300
+    
+  server:
+    url: "http://127.0.0.1:4725/wd/hub"
+    
+  timeouts:
+    implicit: 10
+    explicit: 30
+    pageLoad: 30 

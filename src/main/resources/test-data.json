@@ -1,0 +1,15 @@
+{
+  "passcodes": {
+    "valid": "123456",
+    "short": "123",
+    "first": "111111",
+    "second": "222222"
+  },
+  "timeouts": {
+    "short": 5,
+    "medium": 10,
+    "long": 30,
+    "pageLoad": 60,
+    "appLaunch": 3
+  }
+} 
