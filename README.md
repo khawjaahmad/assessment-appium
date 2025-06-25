@@ -6,8 +6,8 @@ A comprehensive mobile automation framework for Trust Wallet using Appium, TestN
 
 ```bash
 # Clone and setup
-git clone <your-repository-url>
-cd trust-wallet-automation
+git clone https://github.com/khawjaahmad/assessment-appium
+cd assessment-appium
 
 # Validate environment
 ./validate-env.sh

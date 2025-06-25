@@ -280,12 +280,12 @@ adb devices
 ### 1. Clone Repository
 ```bash
 # Clone the project
-git clone <your-repository-url>
-cd trust-wallet-automation
+git clone https://github.com/khawjaahmad/assessment-appium
+cd assessment-appium
 
 # Or if starting from scratch
-mkdir trust-wallet-automation
-cd trust-wallet-automation
+mkdir assessment-appium
+cd assessment-appium
 ```
 
 ### 2. Download Trust Wallet APK
